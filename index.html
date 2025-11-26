@@ -81,18 +81,18 @@
             z-index: 1000;
         }
 
-        /* Show appropriate popup and backdrop */
-        #info1:checked ~ #popup1,
-        #info2:checked ~ #popup2,
-        #info3:checked ~ #popup3,
-        #info4:checked ~ #popup4 {
+        
+        #info1:checked + #popup1,
+        #info2:checked + #popup2,
+        #info3:checked + #popup3,
+        #info4:checked + #popup4 {
             display: block;
         }
 
-        #info1:checked ~ #backdrop1,
-        #info2:checked ~ #backdrop2,
-        #info3:checked ~ #backdrop3,
-        #info4:checked ~ #backdrop4 {
+        #info1:checked + #backdrop1,
+        #info2:checked + #backdrop2,
+        #info3:checked + #backdrop3,
+        #info4:checked + #backdrop4 {
             display: block;
         }
     </style>
@@ -101,7 +101,7 @@
 
     <div class="navbar">Volunteer Opportunities Dashboard</div>
 
-    <!-- Hidden checkboxes -->
+    
     <input type="checkbox" id="info1" hidden>
     <input type="checkbox" id="info2" hidden>
     <input type="checkbox" id="info3" hidden>
@@ -109,28 +109,27 @@
 
     <div class="container">
 
-        <!-- CARD 1 -->
         <div class="card">
             <h3>White Rope Angel Tree Gift Wrapping</h3>
             <p>Help wrap Christmas gifts for Ellicot schools</p>
             <label for="info1" class="btn">Learn More</label>
         </div>
 
-        <!-- CARD 2 -->
+      
         <div class="card">
             <h3>Wreathes Across America</h3>
             <p>Honor our veterans by placing wreathes on their gravestones.</p>
             <label for="info2" class="btn">Learn More</label>
         </div>
 
-        <!-- CARD 3 -->
+        
         <div class="card">
             <h3>Special Olympics</h3>
             <p>Spend time reading, playing games, or helping with activities.</p>
             <label for="info3" class="btn">Learn More</label>
         </div>
 
-        <!-- CARD 4 -->
+        
         <div class="card">
             <h3>Operation Cosmic Kindness</h3>
             <p>Bringing joy to families in need during the holiday season.</p>
@@ -138,7 +137,7 @@
         </div>
     </div>
 
-    <!-- BACKDROPS & POPUPS -->
+  
 
     <div class="backdrop" id="backdrop1"></div>
     <div class="info-card" id="popup1">
